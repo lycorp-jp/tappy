@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 export * as adapters from "./adapters/index.js";
 export * from "./constants.js";
 export { Tappy } from "./tappy.js";

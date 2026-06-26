@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import { erf } from "mathjs";
 import type { Adapter, AnalyzeResult, Device } from "./types.js";
 import { pixelToMm } from "./utils/unit.js";

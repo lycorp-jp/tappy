@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import { describe, expect, it, vitest } from "vitest";
 import type { PuppeteerAdapter } from "../src/adapters/puppeteer.js";
 import { Tappy } from "../src/tappy.js";
