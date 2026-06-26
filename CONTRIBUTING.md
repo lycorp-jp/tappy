@@ -6,14 +6,14 @@ This is a small, early-stage project and we haven't established detailed contrib
 
 ## Code of Conduct
 
-This project follows a [Code of Conduct](CODE_OF_CONDUCT.md) to foster fair and inclusive collaboration.
+This project follows a [Code of Conduct](https://github.com/lycorp-jp/.github/blob/main/CODE_OF_CONDUCT.md) to foster fair and inclusive collaboration.
 We expect all community members and contributors to adhere to it.
 
 We believe that mutual respect and cooperation are essential in building a sustainable open source ecosystem.
 
 ## Developer Certificate of Origin (DCO)
 
-All contributions must comply with the [Developer Certificate of Origin (DCO)](DCO.md). Please review it before contributing.
+All contributions must comply with the [Developer Certificate of Origin (DCO)](https://github.com/lycorp-jp/.github/blob/main/DCO.md). Please review it before contributing.
 
 When making a commit, please include a DCO sign-off by using the following flag:
 
