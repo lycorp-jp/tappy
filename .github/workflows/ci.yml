@@ -7,26 +7,32 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["22.x", "24.x"]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - run: pnpm i --frozen-lockfile
       - run: pnpm build
   test:
-    name: Test
+    name: Test (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["22.x", "24.x"]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: ${{ matrix.node-version }}
           cache: "pnpm"
       - run: pnpm i --frozen-lockfile
       - run: pnpm puppeteer browsers install chrome
